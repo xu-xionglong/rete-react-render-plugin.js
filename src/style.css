@@ -1,0 +1,80 @@
+:root {
+	--node-color: rgba(110,136,255,0.8);
+	--node-color-selected: #ffd92c;
+	--group-color: rgba(15,80,255,0.2);
+	--group-handler-size: 40px;
+	--group-handler-offset: -10px;
+	--socket-size: 24px;
+	--socket-margin: 6px;
+	--socket-color: #96b38a;
+	--node-width: 180px;
+}
+.node {
+	background: var(--node-color);
+	border: 2px solid #4e58bf;
+	border-radius: 10px;
+	cursor: pointer;
+	min-width: var(--node-width);
+	height: auto;
+	padding-bottom: 6px;
+	box-sizing: content-box;
+	position: relative;
+	user-select: none;
+}
+
+.node .title {
+	color: white;
+	font-family: sans-serif;
+	font-size: 18px;
+	padding: 8px 8px 8px 0px;
+	display: inline-block;
+}
+
+.node .input {
+	text-align: left;
+}
+
+.node .input .input-socket {
+	display: inline-block;
+}
+
+.node .input .input-title,.output-title {
+	vertical-align: middle;
+	color: white;
+	display: inline-block;
+	font-family: sans-serif;
+	font-size: 14px;
+	margin: var(--socket-margin);
+	line-height: var(--socket-size);
+}
+
+.node .output {
+	text-align: right;
+}
+
+
+.socket {
+	display: inline-block;
+	cursor: pointer;
+	border: 1px solid white;
+	border-radius: calc(var(--socket-size) / 2);
+	width: var(--socket-size);
+	height: var(--socket-size);
+	margin: var(--socket-margin);
+	vertical-align: middle;
+	background: var(--socket-color);
+	z-index: 2;
+	box-sizing: border-box;
+}
+
+.socket.input {
+	margin-left: calc(0px - var(--socket-size) / 2);
+}
+
+.socket.output {
+	margin-right: calc(0px - var(--socket-size) / 2);
+}
+
+.node .control {
+	padding: var(--socket-margin) calc(var(--socket-size / 2) + var(--socket-margin));
+}
