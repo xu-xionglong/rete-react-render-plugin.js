@@ -45,6 +45,7 @@ class ReactNode extends React.Component {
                 </div>
                 {reactInputs}
                 {reactOutputs}
+                {reactControls}
             </div>
         );
     }
