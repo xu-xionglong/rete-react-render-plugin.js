@@ -76,5 +76,5 @@
 }
 
 .node .control {
-	padding: var(--socket-margin) calc(var(--socket-size / 2) + var(--socket-margin));
+	padding: var(--socket-margin) calc(var(--socket-size) / 2 + var(--socket-margin));
 }
