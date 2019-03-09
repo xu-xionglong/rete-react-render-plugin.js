@@ -1,0 +1,1 @@
+A custom render plugin for [Rete.js](https://github.com/retejs/rete). I use it in my [visual fragment shader programming editor](https://github.com/xu-xionglong/shader-node-editor).
